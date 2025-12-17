@@ -1,0 +1,26 @@
+--usuario github
+jlvmexicogit
+
+set PATH=%PATH%;C:\Users\jlvazqueza\Downloads\PortableGit\bin
+
+--clona el repositorio creado en github hacia el pc local
+git clone https://github.com/jlvmexicogit/asatidwh.git
+
+set PATH=%PATH%;C:\Users\jlvazqueza\Downloads\go1.25.5.windows-amd64\go\bin
+
+SET GOROOT=C:\Users\jlvazqueza\Downloads\go1.25.5.windows-amd64\go
+
+SET GOPATH=C:\Users\jlvazqueza\Downloads\GO 
+
+--ve variables de entorno de go
+go env
+
+--inicializa el proyecto
+go mod init src/github.com/jlvmexicogit/asatidwh
+
+--ejecuta programa principal
+go run main.go
+
+--compila programa principal
+go build main.go
+
