@@ -1,6 +1,5 @@
 package ejercicios
 import (
-	"fmt"
 	"strconv"
 )
 func Ejercicio01(cadena string) (int,string) {
@@ -9,7 +8,7 @@ func Ejercicio01(cadena string) (int,string) {
 	var entero int
 	entero,err:=strconv.Atoi(cadena)
 	if err != nil {
-		fmt.Println("Error al convertir:", err)
+		return 0, "Hubo un error "+err.Error()
 	}	
 	if entero>100 {
 		texto="Es mayor a 100"

@@ -26,7 +26,7 @@ func main() {
 		fmt.Printf("%s \n",os)
 	}
 
-	entero,texto := ejercicios.Ejercicio01("191")
+	entero,texto := ejercicios.Ejercicio01("a 191")
 	fmt.Println("entero= ",entero)
 	fmt.Println("texto= ",texto)
 }
